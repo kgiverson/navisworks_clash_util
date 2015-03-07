@@ -1,0 +1,2618 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.autodesk.com/us/navisworks/schemas/nw-exchange-11.0.xsd" units="ft" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="ft">
+    <clashtests>
+      <clashtest name="Structural vs MEP" test_type="hard" status="ok" tolerance="0.02" merge_composites="0">
+        <linkage mode="none"/>
+        <rules>
+          <rule name="Items in same layer" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_layer">
+            <ruleparams/>
+          </rule>
+          <rule name="Items in same file" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_file">
+            <ruleparams/>
+          </rule>
+          <rule name="Access zones" enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Trades
+SubSystems
+Access Zones">Trades-&gt;SubS ... tems-&gt;Access Zones</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Hangers" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Trades
+Subsystems
+Hangers">Trades-&gt;Subsystems-&gt;Hangers</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="General
+Select All">General-&gt;Select All</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Existing" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="General
+Select All">General-&gt;Select All</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="General
+Existing">General-&gt;Existing</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+        </rules>
+        <summary total="54" new="54" active="0" reviewed="0" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>OK</teststatus>
+        </summary>
+        <clashresults>
+          <clashresult name="Clash1" guid="75326bbc-79e8-4444-a3e7-886d0cd4f8c5" href="Structural vs MEP_files\cd000001.jpg" status="new" distance="-1.54">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="42.74" z="57.58"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash2" guid="ea2a8853-57ad-4fee-988f-f9a3703df1e9" href="Structural vs MEP_files\cd000002.jpg" status="new" distance="-1.54">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="42.74" z="27.58"/>
+            </clashpoint>
+            <gridlocation>3-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="3551e929-0213-4102-a92f-f79ff3c52c29" href="Structural vs MEP_files\cd000003.jpg" status="new" distance="-1.46">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="17.74" z="57.50"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash4" guid="2a9516f5-36de-4941-8940-f0a351f308ee" href="Structural vs MEP_files\cd000004.jpg" status="new" distance="-1.46">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="17.74" z="27.50"/>
+            </clashpoint>
+            <gridlocation>4-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash5" guid="46bdbe2f-eabe-4ec3-9e9c-f5ee01ba6e98" href="Structural vs MEP_files\cd000005.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="22.14" y="17.68" z="59.40"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash6" guid="6c29c25f-0586-42e1-b57b-3b09960335a8" href="Structural vs MEP_files\cd000006.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="42.68" z="58.50"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash7" guid="dfe3439d-ff3e-4915-8468-5ef2db9f2a8a" href="Structural vs MEP_files\cd000007.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="42.68" z="28.50"/>
+            </clashpoint>
+            <gridlocation>3-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash8" guid="d768e02a-72a8-44dd-ba0f-f3e35c4d7f36" href="Structural vs MEP_files\cd000008.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="22.14" y="17.68" z="29.40"/>
+            </clashpoint>
+            <gridlocation>4-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash9" guid="efa1036a-bd18-468f-82f9-46f414351b32" href="Structural vs MEP_files\cd000009.jpg" status="new" distance="-1.19">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="19.71" y="30.18" z="58.50"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash10" guid="6274dc37-c569-453b-b38a-dbb872f33e75" href="Structural vs MEP_files\cd000010.jpg" status="new" distance="-1.19">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="19.71" y="30.18" z="28.50"/>
+            </clashpoint>
+            <gridlocation>1-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash11" guid="76b74795-198c-4672-9c1c-b5fe573609ba" href="Structural vs MEP_files\cd000011.jpg" status="new" distance="-1.17">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="30.18" z="58.50"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash12" guid="761630d8-b0a2-43bb-9fd0-49c4b2c1fb81" href="Structural vs MEP_files\cd000012.jpg" status="new" distance="-1.17">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="30.18" z="28.50"/>
+            </clashpoint>
+            <gridlocation>1-6 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash13" guid="d4d10f46-cc0c-4d80-a63b-432c0e835e70" href="Structural vs MEP_files\cd000013.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="42.74" z="59.14"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130370</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash14" guid="6b4a1d77-df89-4296-b5fa-778bf6375690" href="Structural vs MEP_files\cd000014.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="17.74" z="58.85"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130370</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash15" guid="c4cc4dae-7097-4284-885e-4bd1a0a9bf43" href="Structural vs MEP_files\cd000015.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="30.24" z="59.00"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130370</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash16" guid="6024f6c2-ea70-4d2b-823b-9cc97ab525b5" href="Structural vs MEP_files\cd000016.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="17.74" z="28.85"/>
+            </clashpoint>
+            <gridlocation>4-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash17" guid="b3c5ced5-6f9c-4fd8-8391-4102489d13ec" href="Structural vs MEP_files\cd000017.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="42.74" z="29.14"/>
+            </clashpoint>
+            <gridlocation>3-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash18" guid="d56300e2-14ef-47e8-a010-96eafeced85a" href="Structural vs MEP_files\cd000018.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="38.82" y="30.24" z="29.00"/>
+            </clashpoint>
+            <gridlocation>1-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash19" guid="600417c8-98b0-4b92-b3a6-992362a7c128" href="Structural vs MEP_files\cd000019.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="30.18" z="57.00"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash20" guid="4c45ac64-3c0a-4fc9-af64-d718d6beeeab" href="Structural vs MEP_files\cd000020.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="17.68" z="56.94"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash21" guid="5c09ba33-f66b-4e4f-9bf2-6a0471451458" href="Structural vs MEP_files\cd000021.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="27.42" y="42.74" z="57.22"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash22" guid="c7cebc12-9fe6-4dfd-afe2-57008d6a338e" href="Structural vs MEP_files\cd000022.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="27.42" y="42.74" z="27.22"/>
+            </clashpoint>
+            <gridlocation>2-3 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash23" guid="49081b1a-28d6-4731-916a-3458b3466add" href="Structural vs MEP_files\cd000023.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="30.18" z="27.00"/>
+            </clashpoint>
+            <gridlocation>1-2 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash24" guid="614f68d8-97a5-4a7b-8b8c-39316c1fe2dd" href="Structural vs MEP_files\cd000024.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="17.68" z="26.94"/>
+            </clashpoint>
+            <gridlocation>2-4 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash25" guid="a6fe76e7-c6ea-4c6f-a7da-95d2b699dfab" href="Structural vs MEP_files\cd000025.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.96" y="42.68" z="59.27"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash26" guid="37f87ecd-2852-4e88-9ab3-adcaf00611b4" href="Structural vs MEP_files\cd000026.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.96" y="42.68" z="29.27"/>
+            </clashpoint>
+            <gridlocation>2-3 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash27" guid="a9aa0cd9-78d2-40cd-aada-2f6982f6bfe4" href="Structural vs MEP_files\cd000027.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.96" y="42.68" z="57.50"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash28" guid="656405fa-a391-4c44-b433-3b8cdb6ceb66" href="Structural vs MEP_files\cd000028.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.96" y="42.68" z="27.50"/>
+            </clashpoint>
+            <gridlocation>3-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash29" guid="270546f8-107c-43be-a0de-9241430eb67c" href="Structural vs MEP_files\cd000029.jpg" status="new" distance="-0.43">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.01" y="42.68" z="57.72"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash30" guid="36f6fb07-42d1-4e6c-83d9-a24eedbc8fbc" href="Structural vs MEP_files\cd000030.jpg" status="new" distance="-0.43">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.01" y="42.68" z="27.72"/>
+            </clashpoint>
+            <gridlocation>2-3 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash31" guid="c9464714-7bff-4a5f-8914-8643a90b8e2e" href="Structural vs MEP_files\cd000031.jpg" status="new" distance="-0.41">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.48" y="30.24" z="57.37"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash32" guid="fb704bce-57b0-4d13-a448-d3bd77d2a040" href="Structural vs MEP_files\cd000032.jpg" status="new" distance="-0.41">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.48" y="30.24" z="27.37"/>
+            </clashpoint>
+            <gridlocation>1-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash33" guid="36151aba-7b35-4993-8041-780ece526bec" href="Structural vs MEP_files\cd000033.jpg" status="new" distance="-0.35">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="30.24" z="57.86"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash34" guid="bc846f15-da2a-42af-8692-bfc768ab304c" href="Structural vs MEP_files\cd000034.jpg" status="new" distance="-0.35">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="30.24" z="27.86"/>
+            </clashpoint>
+            <gridlocation>1-2 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash35" guid="414c0c19-d69c-4546-9111-115b25b46200" href="Structural vs MEP_files\cd000035.jpg" status="new" distance="-0.34">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.45" y="42.74" z="57.27"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash36" guid="ce811449-0709-4859-bac8-387b6949c2a6" href="Structural vs MEP_files\cd000036.jpg" status="new" distance="-0.34">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.45" y="42.74" z="27.27"/>
+            </clashpoint>
+            <gridlocation>2-3 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash37" guid="eb733ac5-458f-48b4-8e7e-04762b8f7868" href="Structural vs MEP_files\cd000037.jpg" status="new" distance="-0.33">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.74" y="30.18" z="58.95"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash38" guid="3c61e735-459a-4a3d-b3af-050cc921fe3e" href="Structural vs MEP_files\cd000038.jpg" status="new" distance="-0.33">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.74" y="30.18" z="28.95"/>
+            </clashpoint>
+            <gridlocation>1-2 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash39" guid="f7c1020a-da9c-4f90-a873-e9c5cce2b8a7" href="Structural vs MEP_files\cd000039.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.00" y="17.68" z="57.64"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash40" guid="f54ad01d-b953-4230-a942-65c56fd14342" href="Structural vs MEP_files\cd000040.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.00" y="17.68" z="27.64"/>
+            </clashpoint>
+            <gridlocation>4-5 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash41" guid="ae1d05ab-0333-4b8c-8b26-a0b80cd63706" href="Structural vs MEP_files\cd000041.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="17.68" z="57.86"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash42" guid="7d90b3db-3261-45b2-8511-cd05a5b167f2" href="Structural vs MEP_files\cd000042.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="17.68" z="27.86"/>
+            </clashpoint>
+            <gridlocation>2-4 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash43" guid="361e5e1c-7fe7-4138-ae26-d35dfb7fc618" href="Structural vs MEP_files\cd000043.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.78" y="17.68" z="58.86"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash44" guid="dfe6e106-1357-4d78-a9e4-f229c41b2ab6" href="Structural vs MEP_files\cd000044.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.78" y="17.68" z="28.86"/>
+            </clashpoint>
+            <gridlocation>2-4 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash45" guid="18c88f7c-59ae-443c-a672-58d619f4380e" href="Structural vs MEP_files\cd000045.jpg" status="new" distance="-0.29">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.34" y="17.74" z="57.22"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash46" guid="b210bf53-bd61-466b-9697-69f8a9a610e7" href="Structural vs MEP_files\cd000046.jpg" status="new" distance="-0.29">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.34" y="17.74" z="27.22"/>
+            </clashpoint>
+            <gridlocation>2-4 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash47" guid="60cb2891-f6a2-47b6-8cf8-ef4f13262ed0" href="Structural vs MEP_files\cd000047.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="29.72" z="56.78"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash48" guid="391e8572-94fa-4633-a0fe-e62baf14ed21" href="Structural vs MEP_files\cd000048.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="17.22" z="56.78"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash49" guid="2916e9fe-b054-4d93-91a9-47d96a50b992" href="Structural vs MEP_files\cd000049.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.64" y="43.20" z="56.76"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash50" guid="ff1036ed-9571-4ec0-90ab-36134841db54" href="Structural vs MEP_files\cd000050.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.64" y="43.20" z="26.76"/>
+            </clashpoint>
+            <gridlocation>2-3 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash51" guid="178cff8e-5a05-42af-b43d-c748180f40cd" href="Structural vs MEP_files\cd000051.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="29.72" z="26.78"/>
+            </clashpoint>
+            <gridlocation>1-2 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash52" guid="75269d08-ec7f-433d-9a3a-9ac64b4dd8c0" href="Structural vs MEP_files\cd000052.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="17.22" z="26.78"/>
+            </clashpoint>
+            <gridlocation>2-4 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash53" guid="8e43aae2-4a4c-4a7f-af57-9eb24fc93a70" href="Structural vs MEP_files\cd000053.jpg" status="new" distance="-0.27">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.46" y="30.24" z="57.27"/>
+            </clashpoint>
+            <gridlocation></gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash54" guid="5b5df35c-992c-4709-82d9-7a2c6c451293" href="Structural vs MEP_files\cd000054.jpg" status="new" distance="-0.27">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.46" y="30.24" z="27.27"/>
+            </clashpoint>
+            <gridlocation>1-2 : Roof</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="7" hour="19" minute="30" second="27"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>
