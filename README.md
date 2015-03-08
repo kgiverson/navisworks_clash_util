@@ -1,1 +1,1 @@
-# navisworks_clash_util
+# Navisworks Clash Utility
