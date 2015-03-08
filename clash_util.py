@@ -134,6 +134,7 @@ for x in parsed_data:
                     finds_data.append((clash2_name, clash2_image, clash2_grid_line))
                     finds_data[0] += 1
 
+    # sort clash group name to remove duplicates using the built in Python sort
     s_finds_key = sorted(finds_key)
     s_finds_key_t = tuple(s_finds_key)
     if s_finds_key_t not in results.keys():
