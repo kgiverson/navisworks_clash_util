@@ -1,30 +1,31 @@
 from xml.etree.ElementTree import parse
 from ConfigParser import SafeConfigParser
 import csv
+import argparse
 
-#first lets store the data
-#TODO - parametrize the source file
-#doc = parse('test_data/StructuralvsALL3.xml')
-#doc = parse('test_data/StructuralvsALL.xml')
-#doc = parse('test_data/StructuralvsALL.xml')
-#doc = parse('test_data/Clash_Test_All_System_Clash.xml')
-#doc = parse('test_data/Structural_vs_ALL_Grid_Update.xml')
-doc = parse('test_data/Structural_vs_All_MEP_(Grids_Working).xml')
-clash_output_filename = 'clash_group.csv'
-#TODO parmeterize box_size
-box_size = 3.0
-#TODO parameterize the config file
-config_file="clash_util.ini"
-#TODO output help information
+arg_parser = argparse.ArgumentParser(description="Group clashes in a Navisworks clash detective XML file.")
+arg_parser.add_argument('CLASH_FILE', help="Clash XML file")
+arg_parser.add_argument('--config_file', default="clash_util.ini", help="Name of the configuration file to use")
+arg_parser.add_argument('--box_size', type=float, default="3.0", help="Size of the box in feet")
+arg_parser.add_argument('--clash_output_filename', default="clash_group.csv", help="Name of output CSV")
 
-parser = SafeConfigParser()
-parser.read(config_file)
+args = arg_parser.parse_args()
+
+config_file = args.config_file
+box_size = args.box_size
+clash_data_file = args.CLASH_FILE
+clash_output_filename = args.clash_output_filename
+
+doc = parse(clash_data_file)
+
+config_parser = SafeConfigParser()
+config_parser.read(config_file)
 
 CSV_HEADER = "CLASH_GROUP_NAME, ORIGIN_CLASH, CLASH_GROUP_COUNT, TOTAL_CLASHES, PATH_COMBO, PATH_BLAME, CLASH_DETAIL\n"
 
 # create a list with path priority order
 path_order = []
-for path_order_num, path_file_name in parser.items("path"):
+for path_order_num, path_file_name in config_parser.items("path"):
     path_order.append(path_file_name)
 
 parsed_data = {}
