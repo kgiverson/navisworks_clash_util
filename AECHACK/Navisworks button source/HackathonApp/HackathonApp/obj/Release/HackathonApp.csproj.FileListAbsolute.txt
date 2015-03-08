@@ -1,0 +1,5 @@
+C:\Navisworks\HackathonApp\HackathonApp\bin\Release\HackathonApp.dll
+C:\Navisworks\HackathonApp\HackathonApp\bin\Release\HackathonApp.pdb
+C:\Navisworks\HackathonApp\HackathonApp\obj\Release\HackathonApp.csprojResolveAssemblyReference.cache
+C:\Navisworks\HackathonApp\HackathonApp\obj\Release\HackathonApp.dll
+C:\Navisworks\HackathonApp\HackathonApp\obj\Release\HackathonApp.pdb
