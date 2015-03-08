@@ -6,13 +6,13 @@ import csv
 #doc = parse('test_data/StructuralvsALL3.xml')
 #doc = parse('test_data/StructuralvsALL.xml')
 #doc = parse('test_data/StructuralvsALL.xml')
-doc = parse('test_data/Clash_Test_All_System_Clash.xml')
+#doc = parse('test_data/Clash_Test_All_System_Clash.xml')
+doc = parse('test_data/Structural_vs_ALL_Grid_Update.xml')
 clash_output_filename = 'clash_group.csv'
 
 parsed_data = {}
 clash_count = 0
 
-#TODO - pull out the total number
 for item in doc.iterfind('batchtest/clashtests/clashtest/summary'):
     clash_count = item.attrib['total']
     print clash_count
@@ -30,7 +30,7 @@ for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresul
 
     grid_location = ""
     for grid_line in item.findall('gridlocation'):
-        if grid_line:
+        if grid_line.text is not None:
             grid_location = grid_line.text.split(':')[0]
 
     for classp in item.findall('clashpoint/pos3f'):
