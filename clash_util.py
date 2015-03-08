@@ -16,16 +16,18 @@ for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresul
         parsed_data[coord] = (imagefile,name)
 
 #now let's iterate and find the ones within a certain distance
+#TODO - make this a command line parameter
 box_size = 10.0
 results = {}
 for x in parsed_data:
+    group_size = 0
     clash1_name = parsed_data[x][1]
     clash1_image = parsed_data[x][0]
     z1 = x[2]
     y1 = x[1]
     x1 = x[0]
     finds_key = [clash1_name]
-    finds_data = [(clash1_name, clash1_image)]
+    finds_data = [group_size, (clash1_name, clash1_image)]
     for y in parsed_data:
         clash2_name = parsed_data[y][1]
         clash2_image = parsed_data[y][0]
@@ -42,6 +44,7 @@ for x in parsed_data:
                 if (xdelt >= -box_size) and (xdelt <= box_size):
                     finds_key.append((clash2_name))
                     finds_data.append((clash2_name, clash2_image))
+                    finds_data[0] += 1
     if len(finds_key) > 1:
         s_finds_key = sorted(finds_key)
         s_finds_key_t = tuple(s_finds_key)
@@ -52,5 +55,6 @@ print len(results)
 writer = csv.writer(open('clash_group.csv', 'wb'))
 for clash_group, clash_data in results.items():
     print clash_group
-    writer.writerow([clash_group, clash_data])
+    group_count = clash_data.pop(0)
+    writer.writerow([clash_group, group_count, clash_data])
 
