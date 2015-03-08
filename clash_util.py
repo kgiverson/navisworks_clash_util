@@ -20,7 +20,7 @@ for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresul
 box_size = 10.0
 results = {}
 for x in parsed_data:
-    group_size = 0
+    group_size = 1
     clash1_name = parsed_data[x][1]
     clash1_image = parsed_data[x][0]
     z1 = x[2]
