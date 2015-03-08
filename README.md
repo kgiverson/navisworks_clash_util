@@ -8,7 +8,7 @@ This tool will group together clashes within a set distance around each clash on
 
 ### Directions (for non-developers)
 
-You have two options.  One would be to install Python.  Do do that check out (http://www.pythong.org) and install Python 2.7.
+You have two options.  One would be to install Python.  Do do that check out (http://www.python.org) and install Python 2.7.
 
 If you don’t want to install Python on your local machine you can also use a very nicely packaged virtual machine. Instructions for that approach below.
 
