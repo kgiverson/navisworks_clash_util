@@ -8,7 +8,8 @@ import csv
 #doc = parse('test_data/StructuralvsALL.xml')
 #doc = parse('test_data/StructuralvsALL.xml')
 #doc = parse('test_data/Clash_Test_All_System_Clash.xml')
-doc = parse('test_data/Structural_vs_ALL_Grid_Update.xml')
+#doc = parse('test_data/Structural_vs_ALL_Grid_Update.xml')
+doc = parse('test_data/Structural_vs_All_MEP_(Grids_Working).xml')
 clash_output_filename = 'clash_group.csv'
 #TODO parmeterize box_size
 box_size = 3.0
@@ -16,10 +17,8 @@ box_size = 3.0
 config_file="clash_util.ini"
 #TODO output help information
 
-#TODO - need to pull data from configuration file
 parser = SafeConfigParser()
 parser.read(config_file)
-#print parser.get('path', 'path_file1')
 
 CSV_HEADER = "CLASH_GROUP_NAME, ORIGIN_CLASH, CLASH_GROUP_COUNT, TOTAL_CLASHES, PATH_COMBO, PATH_BLAME, CLASH_DETAIL\n"
 
@@ -27,8 +26,6 @@ CSV_HEADER = "CLASH_GROUP_NAME, ORIGIN_CLASH, CLASH_GROUP_COUNT, TOTAL_CLASHES, 
 path_order = []
 for path_order_num, path_file_name in parser.items("path"):
     path_order.append(path_file_name)
-    #print ' %s = %s' % (path_order_num, path_file_name)
-#print path_order
 
 parsed_data = {}
 clash_count = 0
@@ -108,7 +105,7 @@ for x in parsed_data:
         clash2_name = parsed_data[y][1]
         clash2_file_key = parsed_data[y][2]
         clash2_grid_line = parsed_data[y][3]
-        # skip if we are comparing a clash to iteself
+        # skip if we are comparing a clash to itself
         if clash1_name == clash2_name:
             continue
         # skip if we are not comparing two clashes from the same sub system combination
@@ -130,12 +127,10 @@ for x in parsed_data:
                     finds_data.append((clash2_name, clash2_image, clash2_grid_line))
                     finds_data[0] += 1
 
-
-    if len(finds_key) > 1:
-        s_finds_key = sorted(finds_key)
-        s_finds_key_t = tuple(s_finds_key)
-        if s_finds_key_t not in results.keys():
-            results[s_finds_key_t] = finds_data
+    s_finds_key = sorted(finds_key)
+    s_finds_key_t = tuple(s_finds_key)
+    if s_finds_key_t not in results.keys():
+        results[s_finds_key_t] = finds_data
 
 print "Found %s clash groups in %s total clashes" % (len(results), clash_count)
 
