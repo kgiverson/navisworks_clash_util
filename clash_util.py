@@ -3,9 +3,10 @@ import csv
 
 #first lets store the data
 #TODO - parametrize the source file
-doc = parse('test_data/StructuralvsALL3.xml')
+#doc = parse('test_data/StructuralvsALL3.xml')
 #doc = parse('test_data/StructuralvsALL.xml')
-#doc = parse('test_data/StructuralvsMEP.xml')
+#doc = parse('test_data/StructuralvsALL.xml')
+doc = parse('test_data/Clash_Test_All_System_Clash.xml')
 clash_output_filename = 'clash_group.csv'
 
 parsed_data = {}
@@ -29,7 +30,8 @@ for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresul
 
     grid_location = ""
     for grid_line in item.findall('gridlocation'):
-        grid_location = grid_line.text.split(':')[0]
+        if grid_line:
+            grid_location = grid_line.text.split(':')[0]
 
     for classp in item.findall('clashpoint/pos3f'):
         x = classp.attrib['x']
@@ -40,7 +42,7 @@ for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresul
 
 #now let's iterate and find the ones within a certain distance
 #TODO - make this a command line parameter
-box_size = 10.0
+box_size = 3.0
 results = {}
 for x in parsed_data:
     group_size = 1
