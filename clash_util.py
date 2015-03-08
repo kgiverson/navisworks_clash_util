@@ -1,8 +1,10 @@
+# imports modules
 from xml.etree.ElementTree import parse
 from ConfigParser import SafeConfigParser
 import csv
 import argparse
 
+# pulls in data from .xml file
 arg_parser = argparse.ArgumentParser(description="Group clashes in a Navisworks clash detective XML file.")
 arg_parser.add_argument('CLASH_FILE', help="Clash XML file")
 arg_parser.add_argument('--config_file', default="clash_util.ini", help="Name of the configuration file to use")
@@ -11,6 +13,7 @@ arg_parser.add_argument('--clash_output_filename', default="clash_group.csv", he
 
 args = arg_parser.parse_args()
 
+# sets variables so that user can input parameters
 config_file = args.config_file
 box_size = args.box_size
 clash_data_file = args.CLASH_FILE
@@ -21,6 +24,7 @@ doc = parse(clash_data_file)
 config_parser = SafeConfigParser()
 config_parser.read(config_file)
 
+# creates header for csv file
 CSV_HEADER = "CLASH_GROUP_NAME, ORIGIN_CLASH, CLASH_GROUP_COUNT, TOTAL_CLASHES, PATH_COMBO, PATH_BLAME, CLASH_DETAIL\n"
 
 # create a list with path priority order
@@ -32,11 +36,12 @@ parsed_data = {}
 clash_count = 0
 
 # parse the XML data we care about
-# first some summary information
+# first some summary information-including total number of clashes
 for item in doc.iterfind('batchtest/clashtests/clashtest/summary'):
     clash_count = item.attrib['total']
 
 # now some detail information about the clashes
+# includes viewpoint, grid-location, and x,y,z location
 for item in doc.iterfind('batchtest/clashtests/clashtest/clashresults/clashresult'):
     imagefile = item.attrib['href']
     name = item.attrib['name']
@@ -90,7 +95,7 @@ for x in parsed_data:
         if found:
             break
 
-    # if we get here an haven't found anything our config is messed up, warn the user
+    # if we get here and haven't found anything our config is messed up, warn the user
     if not found:
         print "Could not find path order for %s.  Please check your config file." % clash1_file_key
 
@@ -113,6 +118,7 @@ for x in parsed_data:
         if clash1_file_key != clash2_file_key:
             continue
 
+        # checks if a clash that is within the x,y bounds is also within the z bounds
         finds_data[1] = clash1_file_key
         z2 = y[2]
         y2 = y[1]
@@ -136,7 +142,7 @@ for x in parsed_data:
 print "Found %s clash groups in %s total clashes" % (len(results), clash_count)
 
 output_file = open(clash_output_filename, 'wb')
-# add a header row
+# writes data to .csv file
 output_file.write(CSV_HEADER)
 writer = csv.writer(output_file)
 for clash_group, clash_data in results.items():
