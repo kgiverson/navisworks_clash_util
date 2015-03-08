@@ -1,0 +1,4272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exchange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://download.autodesk.com/us/navisworks/schemas/nw-exchange-11.0.xsd" units="ft" filename="" filepath="">
+  <batchtest name="Report" internal_name="Report" units="ft">
+    <clashtests>
+      <clashtest name="Structural vs All MEP" test_type="hard" status="old" tolerance="0.01" merge_composites="0">
+        <linkage mode="none"/>
+        <rules>
+          <rule name="Items in same layer" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_layer">
+            <ruleparams/>
+          </rule>
+          <rule name="Items in same file" enabled="1" creator="lcop_clash_adapator_for_lcodpclash_ignore_same_file">
+            <ruleparams/>
+          </rule>
+          <rule name="Access zones" enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Trades
+SubSystems
+Access Zones">Trades-&gt;SubS ... tems-&gt;Access Zones</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Hangers" enabled="1" creator="LcOdpClashIgnoreSpecSelectionSetsPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="Trades
+Subsystems
+Hangers">Trades-&gt;Subsystems-&gt;Hangers</name>
+                  </data>
+                </value>
+              </ruleparam>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="General
+Select All">General-&gt;Select All</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+          <rule name="Items which are both in selection set &apos;Trades-&gt;Existing&apos;." enabled="1" creator="LcOdpClashIgnoreSameSelectionSetPlugin">
+            <ruleparams>
+              <ruleparam specific_data="0">
+                <value>
+                  <data type="name">
+                    <name internal="General
+Existing">General-&gt;Existing</name>
+                  </data>
+                </value>
+              </ruleparam>
+            </ruleparams>
+          </rule>
+        </rules>
+        <summary total="60" new="60" active="0" reviewed="0" approved="0" resolved="0">
+          <testtype>Hard</testtype>
+          <teststatus>Old</teststatus>
+        </summary>
+        <clashresults>
+          <clashresult name="Clash59" guid="6444c275-19de-4733-a664-420911120992" href="Structural vs All MEP (Grids Working)_files\cd000001.jpg" status="new" distance="-0.27">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.46" y="30.24" z="57.27"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash51" guid="1d9158eb-66ba-47f2-8e80-f11ae15d6084" href="Structural vs All MEP (Grids Working)_files\cd000002.jpg" status="new" distance="-0.29">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.34" y="17.74" z="57.22"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash49" guid="a672a499-1dfe-42f7-8541-e243355aaef6" href="Structural vs All MEP (Grids Working)_files\cd000003.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.78" y="17.68" z="58.86"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash47" guid="73b0a142-a393-4b91-9184-4286db8e687c" href="Structural vs All MEP (Grids Working)_files\cd000004.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="17.68" z="57.86"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash45" guid="d498ceab-153a-4710-afb6-41b5710a5115" href="Structural vs All MEP (Grids Working)_files\cd000005.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.00" y="17.68" z="57.64"/>
+            </clashpoint>
+            <gridlocation>C-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129733</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash43" guid="88ac8c33-cf94-4b63-933e-f0c4a0727fac" href="Structural vs All MEP (Grids Working)_files\cd000006.jpg" status="new" distance="-0.33">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.74" y="30.18" z="58.95"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash41" guid="c7b38326-58fd-4c6c-86e8-6063b1ead9f7" href="Structural vs All MEP (Grids Working)_files\cd000007.jpg" status="new" distance="-0.34">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.45" y="42.74" z="57.27"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130373</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash39" guid="493e2bc5-d440-4b17-be85-112e9c695053" href="Structural vs All MEP (Grids Working)_files\cd000008.jpg" status="new" distance="-0.35">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="30.24" z="57.86"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash37" guid="1223421f-c2dd-4be7-8369-d1e99bc8fd48" href="Structural vs All MEP (Grids Working)_files\cd000009.jpg" status="new" distance="-0.41">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.48" y="30.24" z="57.37"/>
+            </clashpoint>
+            <gridlocation>C-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129743</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash35" guid="dd1138ab-ad7f-4f5f-b493-9c844b0fa86d" href="Structural vs All MEP (Grids Working)_files\cd000010.jpg" status="new" distance="-0.43">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.01" y="42.68" z="57.72"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130371</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash33" guid="7aecfba4-d9b8-4c70-bbb8-ef7de6a06b18" href="Structural vs All MEP (Grids Working)_files\cd000011.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.96" y="42.68" z="57.50"/>
+            </clashpoint>
+            <gridlocation>C-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130368</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash31" guid="75fbe38f-d591-46b3-8f14-b4aefae7ffd2" href="Structural vs All MEP (Grids Working)_files\cd000012.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.96" y="42.68" z="59.27"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129727</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130366</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Steel, Carbon</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel, Carbon</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash1" guid="290fe5fb-444f-4e32-92e1-d2877537fcae" href="Structural vs All MEP (Grids Working)_files\cd000013.jpg" status="new" distance="-1.54">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="42.74" z="57.58"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash3" guid="155a1b26-c52d-47e6-846a-be21c0001b0d" href="Structural vs All MEP (Grids Working)_files\cd000014.jpg" status="new" distance="-1.46">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="17.74" z="57.50"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash5" guid="bd4ee0df-f795-4218-92c4-5d9a3121215e" href="Structural vs All MEP (Grids Working)_files\cd000015.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="22.14" y="17.68" z="59.40"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash6" guid="29d06222-9a21-408a-bd08-ca50d595aac9" href="Structural vs All MEP (Grids Working)_files\cd000016.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="42.68" z="58.50"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash9" guid="95fe80e2-d7dd-4f6f-bb9b-50b8adbbe244" href="Structural vs All MEP (Grids Working)_files\cd000017.jpg" status="new" distance="-1.19">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="19.71" y="30.18" z="58.50"/>
+            </clashpoint>
+            <gridlocation>A-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130363</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash11" guid="5b3277ac-871c-4a2f-9e30-8176f277c81a" href="Structural vs All MEP (Grids Working)_files\cd000018.jpg" status="new" distance="-1.17">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="30.18" z="58.50"/>
+            </clashpoint>
+            <gridlocation>A-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130362</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash13" guid="b17633ba-9363-40f2-b490-7de5bc065054" href="Structural vs All MEP (Grids Working)_files\cd000019.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="17.01" y="22.79" z="59.15"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129737</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130601</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash14" guid="a29c5e03-a270-430e-bfb6-3fb8dbdd9934" href="Structural vs All MEP (Grids Working)_files\cd000020.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="29.51" y="22.71" z="59.00"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129747</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130601</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash15" guid="d7820ade-8345-468f-81da-3e22aa385073" href="Structural vs All MEP (Grids Working)_files\cd000021.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="42.01" y="22.71" z="59.14"/>
+            </clashpoint>
+            <gridlocation>C-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129731</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130601</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash16" guid="ae9b46cd-ef50-47ca-be9e-76e8d0abcc10" href="Structural vs All MEP (Grids Working)_files\cd000022.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="41.94" y="37.63" z="59.14"/>
+            </clashpoint>
+            <gridlocation>C-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129729</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130600</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash17" guid="84563d64-7e04-4f52-b5b6-c07efb8c30e0" href="Structural vs All MEP (Grids Working)_files\cd000023.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="29.44" y="37.71" z="59.00"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129745</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130600</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash18" guid="aa487ca0-6036-4900-a20d-0508f85ebed6" href="Structural vs All MEP (Grids Working)_files\cd000024.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="16.94" y="37.71" z="59.15"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129739</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130600</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Cable Tray with Fittings</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash25" guid="b2ebb237-4e98-44b4-8ca9-023cadc1c9b9" href="Structural vs All MEP (Grids Working)_files\cd000025.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="30.18" z="57.00"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash26" guid="b98e47f4-757b-4d6a-9b8f-68964f7bedbd" href="Structural vs All MEP (Grids Working)_files\cd000026.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="17.68" z="56.94"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash27" guid="68974b7c-edbb-4ac6-9419-b13a6f5551ad" href="Structural vs All MEP (Grids Working)_files\cd000027.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="27.42" y="42.74" z="57.22"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130364</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash53" guid="d35a783d-e86a-4571-9380-fb4ab33a7cb1" href="Structural vs All MEP (Grids Working)_files\cd000028.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="29.72" z="56.78"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129741</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash54" guid="503744ec-dc7b-46f4-9c86-b5c3e86f7164" href="Structural vs All MEP (Grids Working)_files\cd000029.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="17.22" z="56.78"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129735</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash55" guid="f3f16d80-7b5a-4ac9-a068-6d1867a51832" href="Structural vs All MEP (Grids Working)_files\cd000030.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.64" y="43.20" z="56.76"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129725</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Steel ASTM A992</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Steel ASTM A992</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130365</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Solid</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Rectangular Duct</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash2" guid="cbc53bc0-ef93-4399-b808-d59eae94467f" href="Structural vs All MEP (Grids Working)_files\cd000031.jpg" status="new" distance="-1.54">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="42.74" z="27.58"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash4" guid="09fc12a9-76f6-486c-b734-e543910f5b2c" href="Structural vs All MEP (Grids Working)_files\cd000032.jpg" status="new" distance="-1.46">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="20.20" y="17.74" z="27.50"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash7" guid="e43a48f8-a544-4eb9-9f37-1f5159cdce88" href="Structural vs All MEP (Grids Working)_files\cd000033.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="42.68" z="28.50"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash8" guid="597e392f-fc5a-434a-aa8f-e8a20e7e0b1d" href="Structural vs All MEP (Grids Working)_files\cd000034.jpg" status="new" distance="-1.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="22.14" y="17.68" z="29.40"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash10" guid="ccf3323d-f53e-47a5-98c5-17dced9e0cd7" href="Structural vs All MEP (Grids Working)_files\cd000035.jpg" status="new" distance="-1.19">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="19.71" y="30.18" z="28.50"/>
+            </clashpoint>
+            <gridlocation>A-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129742</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash12" guid="89aef31d-825a-4b58-8059-38ce97171902" href="Structural vs All MEP (Grids Working)_files\cd000036.jpg" status="new" distance="-1.17">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="21.14" y="30.18" z="28.50"/>
+            </clashpoint>
+            <gridlocation>A-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129718</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash19" guid="f765b237-19dc-4839-aa08-5255688e8933" href="Structural vs All MEP (Grids Working)_files\cd000037.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="41.94" y="37.63" z="29.14"/>
+            </clashpoint>
+            <gridlocation>C-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129162</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash20" guid="4d6f4427-e140-4f9d-9475-dd37cebb48b0" href="Structural vs All MEP (Grids Working)_files\cd000038.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="42.01" y="22.71" z="29.14"/>
+            </clashpoint>
+            <gridlocation>C-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129179</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130566</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash21" guid="0b86b638-b934-4b7d-b1e0-7f2ee406f0c8" href="Structural vs All MEP (Grids Working)_files\cd000039.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="17.01" y="22.79" z="29.15"/>
+            </clashpoint>
+            <gridlocation>A-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129231</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130566</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash22" guid="ddbe2cbd-e481-4a7a-89cf-db4ba4773137" href="Structural vs All MEP (Grids Working)_files\cd000040.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="29.51" y="22.71" z="29.00"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129337</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130566</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash23" guid="b3c32970-5adb-434b-bd58-74bb00110b95" href="Structural vs All MEP (Grids Working)_files\cd000041.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="29.44" y="37.71" z="29.00"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129319</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash24" guid="b87411d3-9fb3-4b81-ab23-0687f5be64b2" href="Structural vs All MEP (Grids Working)_files\cd000042.jpg" status="new" distance="-0.94">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="16.94" y="37.71" z="29.15"/>
+            </clashpoint>
+            <gridlocation>A-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129247</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130120</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>ELEC_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Cable Trays</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Ladder Cable Tray</node>
+                  <node>Cable Tray with Fittings</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash28" guid="9b319f43-99e5-4165-9a27-c3c6bfcc0312" href="Structural vs All MEP (Grids Working)_files\cd000043.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="27.42" y="42.74" z="27.22"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash29" guid="750d58e0-d760-4ddd-8ece-24eb9f168e3b" href="Structural vs All MEP (Grids Working)_files\cd000044.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="30.18" z="27.00"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash30" guid="ae03b8ff-86e6-493a-add7-e00c9bc6c7be" href="Structural vs All MEP (Grids Working)_files\cd000045.jpg" status="new" distance="-0.56">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="26.42" y="17.68" z="26.94"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129756</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash32" guid="eb556a84-e0b6-4c2d-82c4-be9cd3d0c18a" href="Structural vs All MEP (Grids Working)_files\cd000046.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.96" y="42.68" z="29.27"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash34" guid="75f006e2-0348-4c0b-9aeb-b7574d47a8a0" href="Structural vs All MEP (Grids Working)_files\cd000047.jpg" status="new" distance="-0.44">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.96" y="42.68" z="27.50"/>
+            </clashpoint>
+            <gridlocation>C-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash36" guid="f6cc9d77-dee1-4ce5-ba37-d05b92d6d382" href="Structural vs All MEP (Grids Working)_files\cd000048.jpg" status="new" distance="-0.43">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.01" y="42.68" z="27.72"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash38" guid="3e17f209-0938-4bc4-9481-7c0d819ca366" href="Structural vs All MEP (Grids Working)_files\cd000049.jpg" status="new" distance="-0.41">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.48" y="30.24" z="27.37"/>
+            </clashpoint>
+            <gridlocation>C-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash40" guid="90ab9cfc-0f2d-4b66-a697-5e44f296c2db" href="Structural vs All MEP (Grids Working)_files\cd000050.jpg" status="new" distance="-0.35">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="30.24" z="27.86"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash42" guid="f0d3ce63-c28a-47bf-a7fa-ccc9f5bec16c" href="Structural vs All MEP (Grids Working)_files\cd000051.jpg" status="new" distance="-0.34">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.45" y="42.74" z="27.27"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129146</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash44" guid="be3ef9b4-1b36-49a5-bda7-336578ba40a6" href="Structural vs All MEP (Grids Working)_files\cd000052.jpg" status="new" distance="-0.33">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.74" y="30.18" z="28.95"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash46" guid="512fdacb-ce44-4ccb-aa25-e54d650352f7" href="Structural vs All MEP (Grids Working)_files\cd000053.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="36.00" y="17.68" z="27.64"/>
+            </clashpoint>
+            <gridlocation>C-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130095</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash48" guid="8f5ff2f4-9dd5-4770-abde-bbc41075e24b" href="Structural vs All MEP (Grids Working)_files\cd000054.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="35.25" y="17.68" z="27.86"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130204</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash50" guid="2569e351-4519-4497-842c-300f9eef24e6" href="Structural vs All MEP (Grids Working)_files\cd000055.jpg" status="new" distance="-0.30">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="32.78" y="17.68" z="28.86"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130079</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash52" guid="f757bfc8-e616-441f-b141-2323c0c81f95" href="Structural vs All MEP (Grids Working)_files\cd000056.jpg" status="new" distance="-0.29">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.34" y="17.74" z="27.22"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129197</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash56" guid="b067f0fb-705d-4d5a-864c-c3bb5d5b339d" href="Structural vs All MEP (Grids Working)_files\cd000057.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="24.64" y="43.20" z="26.76"/>
+            </clashpoint>
+            <gridlocation>B-1 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129130</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash57" guid="d70063ee-670b-4e5a-a8d8-8c0319b070f3" href="Structural vs All MEP (Grids Working)_files\cd000058.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="29.72" z="26.78"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129272</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash58" guid="b6cb2a86-384c-49ce-8ca6-d7e3f798fa13" href="Structural vs All MEP (Grids Working)_files\cd000059.jpg" status="new" distance="-0.28">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="23.64" y="17.22" z="26.78"/>
+            </clashpoint>
+            <gridlocation>B-3 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129215</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129770</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>MECH_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Ducts</node>
+                  <node>Rectangular Duct</node>
+                  <node>Default</node>
+                  <node>Rectangular Duct</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+          <clashresult name="Clash60" guid="85d51c0a-531f-4c72-af67-d9e1981ee06f" href="Structural vs All MEP (Grids Working)_files\cd000060.jpg" status="new" distance="-0.27">
+            <description>Hard</description>
+            <resultstatus>New</resultstatus>
+            <clashpoint>
+              <pos3f x="31.46" y="30.24" z="27.27"/>
+            </clashpoint>
+            <gridlocation>B-2 : Level 2</gridlocation>
+            <createddate>
+              <date year="2015" month="3" day="8" hour="16" minute="13" second="44"/>
+            </createddate>
+            <clashobjects>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>129288</value>
+                </objectattribute>
+                <layer>Level 2</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>Struct_2014_Grid Update 3.nwc</node>
+                  <node>Level 2</node>
+                  <node>Structural Framing</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>W-Wide Flange</node>
+                  <node>W40X211</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+              <clashobject>
+                <objectattribute>
+                  <name>Element ID</name>
+                  <value>130226</value>
+                </objectattribute>
+                <layer>Level 1</layer>
+                <pathlink>
+                  <node>File</node>
+                  <node>File</node>
+                  <node>PLUM_2014_Grid Update 3.nwc</node>
+                  <node>Level 1</node>
+                  <node>Pipes</node>
+                  <node>Pipe Types</node>
+                  <node>Default</node>
+                  <node>Pipe Types</node>
+                  <node>Phase - Exist</node>
+                </pathlink>
+                <smarttags>
+                  <smarttag>
+                    <name>Item Name</name>
+                    <value>Phase - Exist</value>
+                  </smarttag>
+                  <smarttag>
+                    <name>Item Type</name>
+                    <value>Solid</value>
+                  </smarttag>
+                </smarttags>
+              </clashobject>
+            </clashobjects>
+          </clashresult>
+        </clashresults>
+      </clashtest>
+    </clashtests>
+    <selectionsets/>
+  </batchtest>
+</exchange>
