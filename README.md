@@ -6,7 +6,7 @@ It is our hope that this will be a first step in helping to bridge the gap betwe
 
 This tool will group together clashes within a set distance around each clash on the x, y, or z axis, eliminating the need to browse through thousands of clashes in a clash report.  The distance from the clash can be set by the user. Data can then be exported to a csv file.
 
-# Directions (for non-developers)
+### Directions (for non-developers)
 
 1. Download Oracle VM VirtualBox (https://www.virtualbox.org/wiki/Downloads)
 
