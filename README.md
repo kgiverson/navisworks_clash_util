@@ -19,3 +19,10 @@ If you don’t want to install Python on your local machine you can also use a v
 3. Clone this repository to your machine
 
 4. Begin using the Clash Utility in conjunction with Navisworks
+
+### Next steps ###
+
+1. Take the button prototype and make it work more robustly so users don’t need to leave Navisworks
+2. Add the ability to import the clash group data back into Navisworks
+3. Make the batch file more user friendly and automatic
+4. Add some machine learning capability so that the bounding boxes are not fixed and adjust based on user feedback
