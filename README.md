@@ -6,15 +6,15 @@ It is our hope that this will be a first step in helping to bridge the gap betwe
 
 This tool will group together clashes from a Navisworks clash XML export.   It determines a group using a set distance around each clash on the x, y, and z axis, eliminating the need to browse through thousands of clashes in a clash report.  The distance from the clash can be set by the user. Data is then exported to a csv file.
 
-### Installation Directions
+## Installation Directions
 
 If you already have Python 2 installed on your computer you can skip to Usage below.
 
-# Straight Python
+### Straight Python
 
 The easiest way to use the utility is to install (use an already installed) Python on your machine.   Downloads and information on installation can be found at Python's website (https://www.python.org/downloads/).   We have tested this utility using Python 2.7 on OSX and Windows 7 but should work on any environment with Python installed.
 
-# Using a virtual machine
+### Using a virtual machine
 
 If you don’t want to install Python on your local machine you can also use a very nicely packaged virtual machine.  (You could also follow their cloud instructions to use at AWS).
 
@@ -25,7 +25,7 @@ If you don’t want to install Python on your local machine you can also use a v
 5. Update the clash_util.ini file for the path information relevant to your project
 5. Begin using the Clash Utility in conjunction with Navisworks
 
-### Usage
+## Usage
 
 You first need to run the clash detective and export the data using Navisworks report export choosing the XML output option. It's important to select all options for your export so the utility has as much data as it can to work.
 
@@ -36,7 +36,7 @@ Once you have your XML export you need to run the script.
 
 The script has a heal featre you can see by running it with the '-h' option.
 
-### Next steps
+## Next steps
 
 Here are some potential next steps for this project that we came up with during the AEC Hackathon 2.1:
 
@@ -45,7 +45,7 @@ Here are some potential next steps for this project that we came up with during 
 3. Make the batch file more user friendly and automatic for Windows users.
 4. Add some machine learning capability so that the bounding boxes are not fixed and adjust based on user feedback.
 
-### Credits
+## Credits
 
 Members of the The Clash team during AEC Hackathon 2.1 - Chicago where:
 
