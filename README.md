@@ -54,5 +54,6 @@ Members of the The Clash team during AEC Hackathon 2.1 - Chicago where:
 - Kevin Iverson - Clayco
 - Hilary Sinkoff - Technologist at Large
 - Chelsey Smith - Akta
+- Jason Soong - Aspiring data scientist
 - Kyle Wright - Walsh Construction
 
