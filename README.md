@@ -49,6 +49,7 @@ Here are some potential next steps for this project that we came up with during 
 
 Members of the The Clash team during AEC Hackathon 2.1 - Chicago where:
 
+- Armen Avedoumian - Thornton Tomasetti
 - Tyler Davis - The Whiting-Turner Contracting Company
 - Ian Huffman - Mortenson
 - Kevin Iverson - Clayco
